@@ -8,7 +8,16 @@
   <title>Quickfinshop</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+<style>
+ 
+  @media (min-width: 300px ) {
+    #form_apply{
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  
+  }
+</style>
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
   <link href="assets/img/favicon.ico" rel="apple-touch-icon">
@@ -83,7 +92,7 @@
 
       </div>
     </section><!-- End Breadcrumbs -->
-
+<!-- 
     <section id="about" class="about">
 
       <div class="container-fluid">
@@ -106,11 +115,106 @@
         </div>
       </div>
         
-
       
-    </section>
-    
-
+    </section> -->
+    <!-- <script type="text/javascript">
+      var configuration = {
+          widgetId: "336a43304852323935373034",
+          tokenAuth: "408708ACrqwJQHBDCT653e0a40P1",
+          identifier: "<enter mobile number/email here> (optional)",
+          exposeMethods: "<true | false> (optional)",  // When true will expose the methods for OTP verification. Refer 'How it works?' for more details
+          success: (data) => {
+              // get verified token in response
+              console.log('success response', data);
+          },
+          failure: (error) => {
+              // handle error
+              console.log('failure reason', error);
+          },
+      
+      };
+      </script>
+      <script type="text/javascript" onload="initSendOTP(configuration)" src="https://control.msg91.com/app/assets/otp-provider/otp-provider.js"> </script>
+<section id="form_apply" style="margin-left: 15%;margin-right: 10%;">
+<h1> -->
+  Apply for loan application 
+</h1>
+<br>
+<form class="custom-form" name="eligibility">
+  <h3>Business Loan Details</h3>
+  <input type="number" class="form-control" name="loanAmount" placeholder="Loan Amount" required>
+  <br>
+  <h3>Select the City</h3>
+  <select id="stateCapitalDropdown" name="city" required>
+    <option value="Andaman and Nicobar Islands">Port Blair</option>
+    <option value="Andhra Pradesh">Amaravati</option>
+    <option value="Arunachal Pradesh">Itanagar</option>
+    <option value="Assam">Dispur</option>
+    <option value="Bihar">Patna</option>
+    <option value="Chandigarh">Chandigarh</option>
+    <option value="Chhattisgarh">Raipur</option>
+    <option value="Dadra and Nagar Haveli and Daman and Diu">Daman</option>
+    <option value="Delhi">New Delhi</option>
+    <option value="Goa">Panaji</option>
+    <option value="Gujarat">Gandhinagar</option>
+    <option value="Haryana">Chandigarh</option>
+    <option value="Himachal Pradesh">Shimla</option>
+    <option value="Jammu and Kashmir">Srinagar (Summer), Jammu (Winter)</option>
+    <option value="Jharkhand">Ranchi</option>
+    <option value="Karnataka">Bengaluru</option>
+    <option value="Kerala">Thiruvananthapuram</option>
+    <option value="Ladakh">Leh (Summer), Kargil (Winter)</option>
+    <option value="Lakshadweep">Kavaratti</option>
+    <option value="Madhya Pradesh">Bhopal</option>
+    <option value="Maharashtra">Mumbai</option>
+    <option value="Manipur">Imphal</option>
+    <option value="Meghalaya">Shillong</option>
+    <option value="Mizoram">Aizawl</option>
+    <option value="Nagaland">Kohima</option>
+    <option value="Odisha">Bhubaneswar</option>
+    <option value="Puducherry">Puducherry</option>
+    <option value="Punjab">Chandigarh</option>
+    <option value="Rajasthan">Jaipur</option>
+    <option value="Sikkim">Gangtok</option>
+    <option value="Tamil Nadu">Chennai</option>
+    <option value="Telangana">Hyderabad</option>
+    <option value="Tripura">Agartala</option>
+    <option value="Uttar Pradesh">Lucknow</option>
+    <option value="Uttarakhand">Dehradun</option>
+    <option value="West Bengal">Kolkata</option>
+</select>
+<br>
+<br>
+<h3>Company Details</h3>
+<input type="text" class="form-control" name="entityName" placeholder="Entity Name*" required>
+<br>
+<input type="text" class="form-control" name="yearOfIncorporation" placeholder="Year of Incorporation*" required>
+<br>
+<input type="text" class="form-control" name="gstNumber" placeholder="GST/VAT Number" required>
+<br>
+<h3>Turnover</h3>
+<br>
+<input type="number" class="form-control" name="turnover2020_2021" placeholder="FY 2020 - FY 2021 *" required>
+<br>
+<input type="number" class="form-control" name="turnover2021_2022" placeholder="FY 2021 - FY 2022 *" required>
+<br>
+<h3>Type of Business</h3>
+<br>
+<select id="businessTypeDropdown" name="businessType" required>
+<option value="Self Employed/Sole Proprietor">Self Employed/Sole Proprietor</option>
+<option value="Partnership/LLP/Company">Partnership/LLP/Company</option>
+</select>
+<br>
+<br>
+<h3>Personal Details</h3>
+<input type="text" class="form-control" name="name" placeholder="Name*" required>
+<br>
+<input type="email" class="form-control" name="email" placeholder="Email*" required>
+<br>
+<input type="number" class="form-control" name="mobile" placeholder="Mobile Number*" required>
+<button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
+</section>   
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -182,7 +286,7 @@
 
   <!--Jotform JS-->
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     var ifr = document.getElementById("JotFormIFrame-232924248236458");
     if (ifr) {
       var src = ifr.src;
@@ -264,10 +368,10 @@
     } else if (window.attachEvent) {
       window.attachEvent("onmessage", handleIFrameMessage);
     }
-    </script>
+    </script> -->
 
     <!--Disable Right Click-->
-  <script src="assets/js/sec.js"></script>
+  <!-- <script src="assets/js/sec.js"></script> -->
 
 </body>
 
